@@ -1,0 +1,124 @@
+{
+  "info": {
+    "_postman_id": "8300c3c4-5656-4fd3-b54a-4ad296364c77",
+    "name": "Jsonplaceholder collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51306756",
+    "_collection_link": "https://go.postman.co/collection/51306756-8300c3c4-5656-4fd3-b54a-4ad296364c77?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "get request",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/users",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Tanisha Bafna\",\r\n  \"username\": \"tanisha123\",\r\n  \"email\": \"tanisha@example.com\",\r\n  \"address\": {\r\n    \"street\": \"123 Main St\",\r\n    \"city\": \"Kathmandu\",\r\n    \"zipcode\": \"44600\"\r\n  },\r\n  \"phone\": \"9812345678\",\r\n  \"website\": \"tanisha.com\",\r\n  \"company\": {\r\n    \"name\": \"MyCompany\"\r\n  }\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/users",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "users"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Put Request",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"id\": 11,\r\n  \"name\": \"Tanisha Updated\",\r\n  \"username\": \"tanisha_updated\",\r\n  \"email\": \"tanisha_updated@gmail.com\",\r\n  \"address\": {\r\n    \"street\": \"456 New St\",\r\n    \"city\": \"Kathmandu\",\r\n    \"zipcode\": \"44600\"\r\n  },\r\n  \"phone\": \"9812345678\",\r\n  \"website\": \"tanisha.com\",\r\n  \"company\": {\r\n    \"name\": \"MyCompany Updated\"\r\n  }\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/users/1",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "users",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Request",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n  \"id\": 11,\r\n  \"name\": \"Tanisha Updated\",\r\n  \"username\": \"tanisha_updated\",\r\n  \"email\": \"tanisha_updated@example.com\",\r\n  \"address\": {\r\n    \"street\": \"456 New St\",\r\n    \"city\": \"Kathmandu\",\r\n    \"zipcode\": \"44600\"\r\n  },\r\n  \"phone\": \"9812345678\",\r\n  \"website\": \"tanisha.com\",\r\n  \"company\": {\r\n    \"name\": \"MyCompany Updated\"\r\n  }\r\n}\r\n"
+        },
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/users/1",
+          "protocol": "https",
+          "host": [
+            "jsonplaceholder",
+            "typicode",
+            "com"
+          ],
+          "path": [
+            "users",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
